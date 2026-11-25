@@ -1,0 +1,2 @@
+(()=>{function smoothLinks(){document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=a.getAttribute('href'); if(t.length>1){const el=document.querySelector(t); if(el){el.scrollIntoView({behavior:'smooth'}); e.preventDefault();}}});});}
+smoothLinks();})();
